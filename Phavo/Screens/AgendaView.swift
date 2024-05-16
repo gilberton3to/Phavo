@@ -12,14 +12,17 @@ struct AgendaView: View {
     @State var currentDate: Date = Date()
     var body: some View {
         NavigationView {
-            VStack {
-                ScrollView(.vertical, showsIndicators: false) {
-                    VStack(spacing: 20) {
-                        MyDataPicker(currentDate: currentDate)
-                            .environmentObject(tasksModel)
-                    }
-                    .padding(.vertical)
+            ScrollView(.vertical, showsIndicators: false) {
+                ZStack {
+                    Color.grayFundo
+                    RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(.red)
+                        .frame(width: 400, height: 500)
+                    MyDataPicker(currentDate: currentDate)
+                        .environmentObject(tasksModel)
+                        .padding()
                 }
+            }
                 .safeAreaInset(edge: .bottom) {
                     HStack {
                         Button {
@@ -46,7 +49,6 @@ struct AgendaView: View {
                     .foregroundColor(.white)
                     .background(.ultraThinMaterial)
                 }
-            }
         }
     }
 }
