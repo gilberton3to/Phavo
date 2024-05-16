@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		360AA8322BED294200CD3A1E /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360AA8312BED294200CD3A1E /* NavBarView.swift */; };
+		3619EDC72BF2378B00E305D4 /* KanbanConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3619EDC62BF2378B00E305D4 /* KanbanConfig.swift */; };
+		3619EDCA2BF237BC00E305D4 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3619EDC92BF237BC00E305D4 /* Task.swift */; };
+		3619EDCC2BF2413C00E305D4 /* ProjetoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3619EDCB2BF2413C00E305D4 /* ProjetoView.swift */; };
+		364C17B72BEA6B3000659C97 /* PhavoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364C17B62BEA6B3000659C97 /* PhavoApp.swift */; };
+		364C17B92BEA6B3000659C97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364C17B82BEA6B3000659C97 /* ContentView.swift */; };
+		364C17BB2BEA6B3100659C97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364C17BA2BEA6B3100659C97 /* Assets.xcassets */; };
+		364C17C82BEA6B3100659C97 /* PhavoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364C17C72BEA6B3100659C97 /* PhavoTests.swift */; };
+		364C17D22BEA6B3100659C97 /* PhavoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364C17D12BEA6B3100659C97 /* PhavoUITests.swift */; };
+		364C17D42BEA6B3100659C97 /* PhavoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364C17D32BEA6B3100659C97 /* PhavoUITestsLaunchTests.swift */; };
+		364C17E32BEA6B6700659C97 /* PontoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364C17E22BEA6B6700659C97 /* PontoView.swift */; };
+		364C17E52BEA6B9200659C97 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364C17E42BEA6B9200659C97 /* HomeView.swift */; };
+		364C17E72BEA6BE400659C97 /* PontoConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364C17E62BEA6BE400659C97 /* PontoConfig.swift */; };
+		364C17ED2BEA6C4700659C97 /* Hexagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364C17EC2BEA6C4700659C97 /* Hexagon.swift */; };
+		364C17EF2BEA6C5C00659C97 /* Chevron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364C17EE2BEA6C5C00659C97 /* Chevron.swift */; };
+		364C17F12BEA6C7700659C97 /* CardPonto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364C17F02BEA6C7700659C97 /* CardPonto.swift */; };
+		364C17F32BEA6C9100659C97 /* TarefaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364C17F22BEA6C9100659C97 /* TarefaView.swift */; };
+		364C17F52BEA6CAA00659C97 /* Progresso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364C17F42BEA6CAA00659C97 /* Progresso.swift */; };
+		364C17F72BEA6CB900659C97 /* CardProjetos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364C17F62BEA6CB900659C97 /* CardProjetos.swift */; };
+		364C17F92BEA6CC900659C97 /* Geral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364C17F82BEA6CC900659C97 /* Geral.swift */; };
+		364C17FB2BEA6D2000659C97 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364C17FA2BEA6D2000659C97 /* Colors.swift */; };
+		3693AC7D2BF4D3FC00252FA8 /* ConversasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3693AC7C2BF4D3FC00252FA8 /* ConversasView.swift */; };
+		3693AC7F2BF4F40B00252FA8 /* widgetLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3693AC7E2BF4F40B00252FA8 /* widgetLista.swift */; };
+		36C9AD0B2BF3B9D4003D2609 /* KanbanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C9AD0A2BF3B9D4003D2609 /* KanbanView.swift */; };
+		36E0C1D52BF2628D00306D2E /* KanbanWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E0C1D42BF2628D00306D2E /* KanbanWidget.swift */; };
+		36E0C1D72BF26CEA00306D2E /* AgendaWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E0C1D62BF26CEA00306D2E /* AgendaWidget.swift */; };
+		36E0C1DA2BF270F800306D2E /* EventoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E0C1D92BF270F800306D2E /* EventoCard.swift */; };
+		36E0C1DC2BF2748700306D2E /* AgendaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E0C1DB2BF2748700306D2E /* AgendaView.swift */; };
+		36E0C1E22BF276F600306D2E /* WidgetAgenda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E0C1E12BF276F600306D2E /* WidgetAgenda.swift */; };
+		BB0FF1CC2BF5C98800BFAAD2 /* Rendimento.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0FF1CB2BF5C98800BFAAD2 /* Rendimento.swift */; };
+		BB1A5D222BF3CFCB00D57D33 /* DataValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A5D212BF3CFCB00D57D33 /* DataValue.swift */; };
+		BB3DED992BF234D0005CD232 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB3DED982BF234D0005CD232 /* Media.xcassets */; };
+		BB3DED9D2BF25462005CD232 /* TableView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DED9C2BF25462005CD232 /* TableView3.swift */; };
+		BB400AE42BF3AD300052DFBC /* MyDataPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB400AE32BF3AD300052DFBC /* MyDataPicker.swift */; };
+		BB6409802BF3E5DD009254D7 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB64097F2BF3E5DD009254D7 /* ChatView.swift */; };
+		BB95782F2BF536480089EF6A /* Taskks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB95782E2BF536480089EF6A /* Taskks.swift */; };
+		BBD5A7C32BEE44E00021E47C /* GreetingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD5A7C22BEE44E00021E47C /* GreetingsView.swift */; };
+		BBD5A7C52BEE45E30021E47C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD5A7C42BEE45E30021E47C /* ProfileView.swift */; };
+		BBD5A7C72BEE574C0021E47C /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD5A7C62BEE574C0021E47C /* TableView.swift */; };
+		BBD5A7CB2BEE88CE0021E47C /* TableView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD5A7CA2BEE88CE0021E47C /* TableView2.swift */; };
+		EB15C4892BEE4319005E6404 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB15C4882BEE4319005E6404 /* SheetView.swift */; };
+		EB40646F2BED0AAD00DA957D /* FloatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB40646E2BED0AAD00DA957D /* FloatButton.swift */; };
+		EB98FA742BEBC15900E3682B /* Comunicados.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB98FA732BEBC15900E3682B /* Comunicados.swift */; };
+		EB98FA792BEBC1D800E3682B /* CardComunicados.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB98FA782BEBC1D800E3682B /* CardComunicados.swift */; };
+		FEDDAA952BF401FB00EB72DC /* ConversationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDDAA942BF401FB00EB72DC /* ConversationRow.swift */; };
+		FEDDAA972BF402AE00EB72DC /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDDAA962BF402AE00EB72DC /* Conversation.swift */; };
+		FEDDAA9A2BF405D600EB72DC /* PersonStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDDAA992BF405D600EB72DC /* PersonStatus.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		364C17C42BEA6B3100659C97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 364C17AB2BEA6B3000659C97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 364C17B22BEA6B3000659C97;
+			remoteInfo = Phavo;
+		};
+		364C17CE2BEA6B3100659C97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 364C17AB2BEA6B3000659C97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 364C17B22BEA6B3000659C97;
+			remoteInfo = Phavo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		360AA8312BED294200CD3A1E /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
+		3619EDC62BF2378B00E305D4 /* KanbanConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanbanConfig.swift; sourceTree = "<group>"; };
+		3619EDC92BF237BC00E305D4 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		3619EDCB2BF2413C00E305D4 /* ProjetoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoView.swift; sourceTree = "<group>"; };
+		364C17B32BEA6B3000659C97 /* Phavo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phavo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		364C17B62BEA6B3000659C97 /* PhavoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhavoApp.swift; sourceTree = "<group>"; };
+		364C17B82BEA6B3000659C97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		364C17BA2BEA6B3100659C97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		364C17C32BEA6B3100659C97 /* PhavoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhavoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		364C17C72BEA6B3100659C97 /* PhavoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhavoTests.swift; sourceTree = "<group>"; };
+		364C17CD2BEA6B3100659C97 /* PhavoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhavoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		364C17D12BEA6B3100659C97 /* PhavoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhavoUITests.swift; sourceTree = "<group>"; };
+		364C17D32BEA6B3100659C97 /* PhavoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhavoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		364C17E22BEA6B6700659C97 /* PontoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PontoView.swift; sourceTree = "<group>"; };
+		364C17E42BEA6B9200659C97 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		364C17E62BEA6BE400659C97 /* PontoConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PontoConfig.swift; sourceTree = "<group>"; };
+		364C17EC2BEA6C4700659C97 /* Hexagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexagon.swift; sourceTree = "<group>"; };
+		364C17EE2BEA6C5C00659C97 /* Chevron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chevron.swift; sourceTree = "<group>"; };
+		364C17F02BEA6C7700659C97 /* CardPonto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPonto.swift; sourceTree = "<group>"; };
+		364C17F22BEA6C9100659C97 /* TarefaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarefaView.swift; sourceTree = "<group>"; };
+		364C17F42BEA6CAA00659C97 /* Progresso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progresso.swift; sourceTree = "<group>"; };
+		364C17F62BEA6CB900659C97 /* CardProjetos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProjetos.swift; sourceTree = "<group>"; };
+		364C17F82BEA6CC900659C97 /* Geral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geral.swift; sourceTree = "<group>"; };
+		364C17FA2BEA6D2000659C97 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		3693AC7C2BF4D3FC00252FA8 /* ConversasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversasView.swift; sourceTree = "<group>"; };
+		3693AC7E2BF4F40B00252FA8 /* widgetLista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widgetLista.swift; sourceTree = "<group>"; };
+		36C9AD0A2BF3B9D4003D2609 /* KanbanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanbanView.swift; sourceTree = "<group>"; };
+		36E0C1D42BF2628D00306D2E /* KanbanWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanbanWidget.swift; sourceTree = "<group>"; };
+		36E0C1D62BF26CEA00306D2E /* AgendaWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaWidget.swift; sourceTree = "<group>"; };
+		36E0C1D92BF270F800306D2E /* EventoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventoCard.swift; sourceTree = "<group>"; };
+		36E0C1DB2BF2748700306D2E /* AgendaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaView.swift; sourceTree = "<group>"; };
+		36E0C1E12BF276F600306D2E /* WidgetAgenda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetAgenda.swift; sourceTree = "<group>"; };
+		BB0FF1CB2BF5C98800BFAAD2 /* Rendimento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rendimento.swift; sourceTree = "<group>"; };
+		BB1A5D212BF3CFCB00D57D33 /* DataValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataValue.swift; sourceTree = "<group>"; };
+		BB3DED982BF234D0005CD232 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		BB3DED9C2BF25462005CD232 /* TableView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView3.swift; sourceTree = "<group>"; };
+		BB400AE32BF3AD300052DFBC /* MyDataPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDataPicker.swift; sourceTree = "<group>"; };
+		BB64097F2BF3E5DD009254D7 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		BB95782E2BF536480089EF6A /* Taskks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Taskks.swift; sourceTree = "<group>"; };
+		BBD5A7C22BEE44E00021E47C /* GreetingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsView.swift; sourceTree = "<group>"; };
+		BBD5A7C42BEE45E30021E47C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		BBD5A7C62BEE574C0021E47C /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		BBD5A7CA2BEE88CE0021E47C /* TableView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView2.swift; sourceTree = "<group>"; };
+		EB15C4882BEE4319005E6404 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		EB40646E2BED0AAD00DA957D /* FloatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatButton.swift; sourceTree = "<group>"; };
+		EB98FA732BEBC15900E3682B /* Comunicados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comunicados.swift; sourceTree = "<group>"; };
+		EB98FA782BEBC1D800E3682B /* CardComunicados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardComunicados.swift; sourceTree = "<group>"; };
+		FEDDAA942BF401FB00EB72DC /* ConversationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationRow.swift; sourceTree = "<group>"; };
+		FEDDAA962BF402AE00EB72DC /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		FEDDAA992BF405D600EB72DC /* PersonStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStatus.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		364C17B02BEA6B3000659C97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		364C17C02BEA6B3100659C97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		364C17CA2BEA6B3100659C97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3619EDC82BF237AE00E305D4 /* Kanban */ = {
+			isa = PBXGroup;
+			children = (
+				3619EDC92BF237BC00E305D4 /* Task.swift */,
+				3619EDC62BF2378B00E305D4 /* KanbanConfig.swift */,
+				36E0C1D42BF2628D00306D2E /* KanbanWidget.swift */,
+			);
+			path = Kanban;
+			sourceTree = "<group>";
+		};
+		364C17AA2BEA6B3000659C97 = {
+			isa = PBXGroup;
+			children = (
+				364C17B52BEA6B3000659C97 /* Phavo */,
+				364C17C62BEA6B3100659C97 /* PhavoTests */,
+				364C17D02BEA6B3100659C97 /* PhavoUITests */,
+				364C17B42BEA6B3000659C97 /* Products */,
+				BB2201ED2BF389D100D9E51C /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		364C17B42BEA6B3000659C97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				364C17B32BEA6B3000659C97 /* Phavo.app */,
+				364C17C32BEA6B3100659C97 /* PhavoTests.xctest */,
+				364C17CD2BEA6B3100659C97 /* PhavoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		364C17B52BEA6B3000659C97 /* Phavo */ = {
+			isa = PBXGroup;
+			children = (
+				364C17E82BEA6C0E00659C97 /* Components */,
+				364C17B62BEA6B3000659C97 /* PhavoApp.swift */,
+				364C17B82BEA6B3000659C97 /* ContentView.swift */,
+				BB3DED982BF234D0005CD232 /* Media.xcassets */,
+				364C17BA2BEA6B3100659C97 /* Assets.xcassets */,
+				364C17BC2BEA6B3100659C97 /* Screens */,
+				364C17FA2BEA6D2000659C97 /* Colors.swift */,
+			);
+			path = Phavo;
+			sourceTree = "<group>";
+		};
+		364C17BC2BEA6B3100659C97 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BBD5A7C22BEE44E00021E47C /* GreetingsView.swift */,
+				364C17E42BEA6B9200659C97 /* HomeView.swift */,
+				BBD5A7C42BEE45E30021E47C /* ProfileView.swift */,
+				3619EDCB2BF2413C00E305D4 /* ProjetoView.swift */,
+				36E0C1DB2BF2748700306D2E /* AgendaView.swift */,
+				EB98FA762BEBC1A700E3682B /* Comunicados */,
+				BB64097F2BF3E5DD009254D7 /* ChatView.swift */,
+				3693AC7C2BF4D3FC00252FA8 /* ConversasView.swift */,
+				364C17E22BEA6B6700659C97 /* PontoView.swift */,
+				36C9AD0A2BF3B9D4003D2609 /* KanbanView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		364C17C62BEA6B3100659C97 /* PhavoTests */ = {
+			isa = PBXGroup;
+			children = (
+				364C17C72BEA6B3100659C97 /* PhavoTests.swift */,
+			);
+			path = PhavoTests;
+			sourceTree = "<group>";
+		};
+		364C17D02BEA6B3100659C97 /* PhavoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				364C17D12BEA6B3100659C97 /* PhavoUITests.swift */,
+				364C17D32BEA6B3100659C97 /* PhavoUITestsLaunchTests.swift */,
+			);
+			path = PhavoUITests;
+			sourceTree = "<group>";
+		};
+		364C17E82BEA6C0E00659C97 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FEDDAA932BF401E700EB72DC /* Chat */,
+				36E0C1DE2BF2761900306D2E /* Home */,
+				36E0C1D82BF270E400306D2E /* Agenda */,
+				3619EDC82BF237AE00E305D4 /* Kanban */,
+				364C17EB2BEA6C3200659C97 /* Projeto */,
+				364C17EA2BEA6C2C00659C97 /* Ponto */,
+				364C17E92BEA6C2300659C97 /* Gerais */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		364C17E92BEA6C2300659C97 /* Gerais */ = {
+			isa = PBXGroup;
+			children = (
+				364C17EC2BEA6C4700659C97 /* Hexagon.swift */,
+				364C17EE2BEA6C5C00659C97 /* Chevron.swift */,
+				BBD5A7C62BEE574C0021E47C /* TableView.swift */,
+				BBD5A7CA2BEE88CE0021E47C /* TableView2.swift */,
+				BB3DED9C2BF25462005CD232 /* TableView3.swift */,
+				360AA8312BED294200CD3A1E /* NavBarView.swift */,
+			);
+			path = Gerais;
+			sourceTree = "<group>";
+		};
+		364C17EA2BEA6C2C00659C97 /* Ponto */ = {
+			isa = PBXGroup;
+			children = (
+				364C17F02BEA6C7700659C97 /* CardPonto.swift */,
+				364C17E62BEA6BE400659C97 /* PontoConfig.swift */,
+			);
+			path = Ponto;
+			sourceTree = "<group>";
+		};
+		364C17EB2BEA6C3200659C97 /* Projeto */ = {
+			isa = PBXGroup;
+			children = (
+				364C17F22BEA6C9100659C97 /* TarefaView.swift */,
+				364C17F42BEA6CAA00659C97 /* Progresso.swift */,
+				364C17F62BEA6CB900659C97 /* CardProjetos.swift */,
+				364C17F82BEA6CC900659C97 /* Geral.swift */,
+				36E0C1D62BF26CEA00306D2E /* AgendaWidget.swift */,
+				BB0FF1CB2BF5C98800BFAAD2 /* Rendimento.swift */,
+			);
+			path = Projeto;
+			sourceTree = "<group>";
+		};
+		36E0C1D82BF270E400306D2E /* Agenda */ = {
+			isa = PBXGroup;
+			children = (
+				BB400AE22BF3AB190052DFBC /* Model */,
+				36E0C1D92BF270F800306D2E /* EventoCard.swift */,
+				BB400AE32BF3AD300052DFBC /* MyDataPicker.swift */,
+			);
+			path = Agenda;
+			sourceTree = "<group>";
+		};
+		36E0C1DE2BF2761900306D2E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				36E0C1E12BF276F600306D2E /* WidgetAgenda.swift */,
+				3693AC7E2BF4F40B00252FA8 /* widgetLista.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BB2201ED2BF389D100D9E51C /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		BB400AE22BF3AB190052DFBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB1A5D212BF3CFCB00D57D33 /* DataValue.swift */,
+				BB95782E2BF536480089EF6A /* Taskks.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB98FA762BEBC1A700E3682B /* Comunicados */ = {
+			isa = PBXGroup;
+			children = (
+				EB98FA732BEBC15900E3682B /* Comunicados.swift */,
+				EB15C4882BEE4319005E6404 /* SheetView.swift */,
+				EB98FA772BEBC1BC00E3682B /* Componentes */,
+			);
+			path = Comunicados;
+			sourceTree = "<group>";
+		};
+		EB98FA772BEBC1BC00E3682B /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				EB98FA782BEBC1D800E3682B /* CardComunicados.swift */,
+				EB40646E2BED0AAD00DA957D /* FloatButton.swift */,
+			);
+			path = Componentes;
+			sourceTree = "<group>";
+		};
+		FEDDAA932BF401E700EB72DC /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				FEDDAA982BF405C800EB72DC /* Model */,
+				FEDDAA942BF401FB00EB72DC /* ConversationRow.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		FEDDAA982BF405C800EB72DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FEDDAA962BF402AE00EB72DC /* Conversation.swift */,
+				FEDDAA992BF405D600EB72DC /* PersonStatus.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		364C17B22BEA6B3000659C97 /* Phavo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 364C17D72BEA6B3100659C97 /* Build configuration list for PBXNativeTarget "Phavo" */;
+			buildPhases = (
+				364C17AF2BEA6B3000659C97 /* Sources */,
+				364C17B02BEA6B3000659C97 /* Frameworks */,
+				364C17B12BEA6B3000659C97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36CCE2FF2BF53490008B3715 /* PBXTargetDependency */,
+			);
+			name = Phavo;
+			productName = Phavo;
+			productReference = 364C17B32BEA6B3000659C97 /* Phavo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		364C17C22BEA6B3100659C97 /* PhavoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 364C17DA2BEA6B3100659C97 /* Build configuration list for PBXNativeTarget "PhavoTests" */;
+			buildPhases = (
+				364C17BF2BEA6B3100659C97 /* Sources */,
+				364C17C02BEA6B3100659C97 /* Frameworks */,
+				364C17C12BEA6B3100659C97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				364C17C52BEA6B3100659C97 /* PBXTargetDependency */,
+			);
+			name = PhavoTests;
+			productName = PhavoTests;
+			productReference = 364C17C32BEA6B3100659C97 /* PhavoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		364C17CC2BEA6B3100659C97 /* PhavoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 364C17DD2BEA6B3100659C97 /* Build configuration list for PBXNativeTarget "PhavoUITests" */;
+			buildPhases = (
+				364C17C92BEA6B3100659C97 /* Sources */,
+				364C17CA2BEA6B3100659C97 /* Frameworks */,
+				364C17CB2BEA6B3100659C97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				364C17CF2BEA6B3100659C97 /* PBXTargetDependency */,
+			);
+			name = PhavoUITests;
+			productName = PhavoUITests;
+			productReference = 364C17CD2BEA6B3100659C97 /* PhavoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		364C17AB2BEA6B3000659C97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					364C17B22BEA6B3000659C97 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					364C17C22BEA6B3100659C97 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 364C17B22BEA6B3000659C97;
+					};
+					364C17CC2BEA6B3100659C97 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 364C17B22BEA6B3000659C97;
+					};
+				};
+			};
+			buildConfigurationList = 364C17AE2BEA6B3000659C97 /* Build configuration list for PBXProject "Phavo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 364C17AA2BEA6B3000659C97;
+			packageReferences = (
+				36CCE2FB2BF530AD008B3715 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
+			productRefGroup = 364C17B42BEA6B3000659C97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				364C17B22BEA6B3000659C97 /* Phavo */,
+				364C17C22BEA6B3100659C97 /* PhavoTests */,
+				364C17CC2BEA6B3100659C97 /* PhavoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		364C17B12BEA6B3000659C97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB3DED992BF234D0005CD232 /* Media.xcassets in Resources */,
+				364C17BB2BEA6B3100659C97 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		364C17C12BEA6B3100659C97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		364C17CB2BEA6B3100659C97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		364C17AF2BEA6B3000659C97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360AA8322BED294200CD3A1E /* NavBarView.swift in Sources */,
+				364C17B92BEA6B3000659C97 /* ContentView.swift in Sources */,
+				364C17F52BEA6CAA00659C97 /* Progresso.swift in Sources */,
+				36E0C1D52BF2628D00306D2E /* KanbanWidget.swift in Sources */,
+				3619EDC72BF2378B00E305D4 /* KanbanConfig.swift in Sources */,
+				364C17F92BEA6CC900659C97 /* Geral.swift in Sources */,
+				364C17FB2BEA6D2000659C97 /* Colors.swift in Sources */,
+				BBD5A7C32BEE44E00021E47C /* GreetingsView.swift in Sources */,
+				BB0FF1CC2BF5C98800BFAAD2 /* Rendimento.swift in Sources */,
+				36E0C1E22BF276F600306D2E /* WidgetAgenda.swift in Sources */,
+				364C17E32BEA6B6700659C97 /* PontoView.swift in Sources */,
+				EB98FA742BEBC15900E3682B /* Comunicados.swift in Sources */,
+				364C17F12BEA6C7700659C97 /* CardPonto.swift in Sources */,
+				BB95782F2BF536480089EF6A /* Taskks.swift in Sources */,
+				36E0C1D72BF26CEA00306D2E /* AgendaWidget.swift in Sources */,
+				364C17E72BEA6BE400659C97 /* PontoConfig.swift in Sources */,
+				36E0C1DA2BF270F800306D2E /* EventoCard.swift in Sources */,
+				FEDDAA952BF401FB00EB72DC /* ConversationRow.swift in Sources */,
+				BBD5A7C52BEE45E30021E47C /* ProfileView.swift in Sources */,
+				3619EDCC2BF2413C00E305D4 /* ProjetoView.swift in Sources */,
+				364C17B72BEA6B3000659C97 /* PhavoApp.swift in Sources */,
+				FEDDAA972BF402AE00EB72DC /* Conversation.swift in Sources */,
+				BB400AE42BF3AD300052DFBC /* MyDataPicker.swift in Sources */,
+				364C17F32BEA6C9100659C97 /* TarefaView.swift in Sources */,
+				EB15C4892BEE4319005E6404 /* SheetView.swift in Sources */,
+				BB3DED9D2BF25462005CD232 /* TableView3.swift in Sources */,
+				3693AC7D2BF4D3FC00252FA8 /* ConversasView.swift in Sources */,
+				BBD5A7CB2BEE88CE0021E47C /* TableView2.swift in Sources */,
+				36E0C1DC2BF2748700306D2E /* AgendaView.swift in Sources */,
+				BB1A5D222BF3CFCB00D57D33 /* DataValue.swift in Sources */,
+				364C17ED2BEA6C4700659C97 /* Hexagon.swift in Sources */,
+				36C9AD0B2BF3B9D4003D2609 /* KanbanView.swift in Sources */,
+				FEDDAA9A2BF405D600EB72DC /* PersonStatus.swift in Sources */,
+				BBD5A7C72BEE574C0021E47C /* TableView.swift in Sources */,
+				364C17EF2BEA6C5C00659C97 /* Chevron.swift in Sources */,
+				364C17F72BEA6CB900659C97 /* CardProjetos.swift in Sources */,
+				EB40646F2BED0AAD00DA957D /* FloatButton.swift in Sources */,
+				364C17E52BEA6B9200659C97 /* HomeView.swift in Sources */,
+				BB6409802BF3E5DD009254D7 /* ChatView.swift in Sources */,
+				EB98FA792BEBC1D800E3682B /* CardComunicados.swift in Sources */,
+				3693AC7F2BF4F40B00252FA8 /* widgetLista.swift in Sources */,
+				3619EDCA2BF237BC00E305D4 /* Task.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		364C17BF2BEA6B3100659C97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364C17C82BEA6B3100659C97 /* PhavoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		364C17C92BEA6B3100659C97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364C17D22BEA6B3100659C97 /* PhavoUITests.swift in Sources */,
+				364C17D42BEA6B3100659C97 /* PhavoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		364C17C52BEA6B3100659C97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 364C17B22BEA6B3000659C97 /* Phavo */;
+			targetProxy = 364C17C42BEA6B3100659C97 /* PBXContainerItemProxy */;
+		};
+		364C17CF2BEA6B3100659C97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 364C17B22BEA6B3000659C97 /* Phavo */;
+			targetProxy = 364C17CE2BEA6B3100659C97 /* PBXContainerItemProxy */;
+		};
+		36CCE2FF2BF53490008B3715 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 36CCE2FE2BF53490008B3715 /* SwiftLintBuildToolPlugin */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		364C17D52BEA6B3100659C97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		364C17D62BEA6B3100659C97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		364C17D82BEA6B3100659C97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Phavo/Screens\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IzadoraMontenegro.Phavo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		364C17D92BEA6B3100659C97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Phavo/Screens\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IzadoraMontenegro.Phavo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		364C17DB2BEA6B3100659C97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IzadoraMontenegro.PhavoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phavo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Phavo";
+			};
+			name = Debug;
+		};
+		364C17DC2BEA6B3100659C97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IzadoraMontenegro.PhavoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phavo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Phavo";
+			};
+			name = Release;
+		};
+		364C17DE2BEA6B3100659C97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IzadoraMontenegro.PhavoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Phavo;
+			};
+			name = Debug;
+		};
+		364C17DF2BEA6B3100659C97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IzadoraMontenegro.PhavoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Phavo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		364C17AE2BEA6B3000659C97 /* Build configuration list for PBXProject "Phavo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				364C17D52BEA6B3100659C97 /* Debug */,
+				364C17D62BEA6B3100659C97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		364C17D72BEA6B3100659C97 /* Build configuration list for PBXNativeTarget "Phavo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				364C17D82BEA6B3100659C97 /* Debug */,
+				364C17D92BEA6B3100659C97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		364C17DA2BEA6B3100659C97 /* Build configuration list for PBXNativeTarget "PhavoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				364C17DB2BEA6B3100659C97 /* Debug */,
+				364C17DC2BEA6B3100659C97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		364C17DD2BEA6B3100659C97 /* Build configuration list for PBXNativeTarget "PhavoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				364C17DE2BEA6B3100659C97 /* Debug */,
+				364C17DF2BEA6B3100659C97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		36CCE2FB2BF530AD008B3715 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.55.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		36CCE2FE2BF53490008B3715 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36CCE2FB2BF530AD008B3715 /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 364C17AB2BEA6B3000659C97 /* Project object */;
+}
