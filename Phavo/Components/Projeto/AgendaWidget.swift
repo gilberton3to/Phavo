@@ -15,7 +15,7 @@ struct AgendaWidget: View {
                 ZStack {
                     RoundedRectangle(cornerRadius: 20)
                         .fill(Color.white)
-                        .frame(width: 380, height: 357)
+                        .frame(width: 360, height: 357)
                     VStack {
                         HStack {
                             HStack {
@@ -25,7 +25,7 @@ struct AgendaWidget: View {
                                     .foregroundStyle(.yellowPrincipal)
                                     .font(.system(size: 17))
                             }
-                            .padding(.trailing, 175)
+                            .padding(.trailing, 145)
                             HStack {
                                 Image(systemName: "chevron.left")
                                     .padding(.trailing, 27)
@@ -35,7 +35,7 @@ struct AgendaWidget: View {
                             .font(.system(size: 22))
                         }
                         .padding(.bottom, 15)
-                        HStack(spacing: 28) {
+                        HStack(spacing: 23.5) {
                             Text( "DOM")
                             Text( "SEG")
                             Text( "TER")
@@ -46,8 +46,7 @@ struct AgendaWidget: View {
                         }
                         .font(.system(size: 13))
                         .foregroundColor(.cinzaEvento)
-                        .padding(.bottom, 15)
-                        VStack(spacing: 29) {
+                        VStack(spacing: 24) {
                             HStack(spacing: 46) {
                                 Text(" ")
                                 Text(" ")
@@ -58,7 +57,7 @@ struct AgendaWidget: View {
                                 Text("3")
                             }
                             .font(.system(size: 17))
-                            HStack(spacing: 39.5) {
+                            HStack(spacing: 37) {
                                 Text( "4")
                                 ZStack {
                                     Image("HexAmaCal")
@@ -72,7 +71,7 @@ struct AgendaWidget: View {
                                 Text("10")
                             }
                             .font(.system(size: 17))
-                            HStack(spacing: 36.5) {
+                            HStack(spacing: 34) {
                                 Text("11")
                                 Text("12")
                                 Text("13")
@@ -82,7 +81,7 @@ struct AgendaWidget: View {
                                 Text("17")
                             }
                             .font(.system(size: 17))
-                            HStack(spacing: 34.5) {
+                            HStack(spacing: 32.5) {
                                 Text("18")
                                 Text("19")
                                 Text("20")
@@ -92,7 +91,7 @@ struct AgendaWidget: View {
                                 Text("24")
                             }
                             .font(.system(size: 17))
-                            HStack(spacing: 31) {
+                            HStack(spacing: 29) {
                                 Text("25")
                                 Text("26")
                                 Text("27")

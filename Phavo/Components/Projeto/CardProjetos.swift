@@ -9,7 +9,7 @@ struct CardProjetos: View {
             .overlay {
                 RoundedRectangle(cornerRadius: 20)
                     .fill(.whitePhavo)
-                    .frame(width: 380, height: 245)
+                    .frame(width: 360, height: 230)
                     .overlay {
                         HStack {
                             VStack {
@@ -24,29 +24,28 @@ struct CardProjetos: View {
                                             .foregroundStyle(.gray)
                                             .padding(.leading, -28)
                                     }
-                                    .padding(.leading, 8)
+                                    .padding(.leading, 5)
                                     WidgetLista(tipo: 3)
-                                    .padding(.top, 15)
+                                    .padding(.top, 3)
                                 }
-//                            .padding(.trailing, 120)
-                                .padding(.top, 15)
+                                .padding(.top, 1)
                         }
                             ZStack {
                                 Circle()
-                                    .stroke(lineWidth: 20)
-                                    .frame(width: 125, height: 125)
+                                    .stroke(lineWidth: 15)
+                                    .frame(width: 105, height: 105)
                                     .opacity(0.5)
                                     .foregroundStyle(.progressCircle)
                                 Circle()
                                     .trim(from: 0.4, to: 1)
-                                    .stroke(style: StrokeStyle(lineWidth: 20, lineCap: .round, lineJoin: .round))
-                                    .frame(width: 125, height: 125)
+                                    .stroke(style: StrokeStyle(lineWidth: 15, lineCap: .round, lineJoin: .round))
+                                    .frame(width: 105, height: 105)
                                     .foregroundStyle(cor)
                             }
                             .rotationEffect(.degrees(130))
-                            .padding(.trailing, 10)
-                            .padding(.leading, -25)
-                            .padding(.top, 30)
+                            .padding(.trailing, 15)
+                            .padding(.leading, -45)
+                            .padding(.top, 50)
                    }
              }
           }

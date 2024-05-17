@@ -13,9 +13,9 @@ struct WidgetAgenda: View {
             .ignoresSafeArea()
             .overlay {
                 ZStack {
-                    RoundedRectangle(cornerRadius: 13.68)
+                    RoundedRectangle(cornerRadius: 22)
                         .fill(Color.white)
-                        .frame(width: 380, height: 157)
+                        .frame(width: 360, height: 157)
                     VStack {
                         HStack {
                             VStack {
@@ -26,31 +26,35 @@ struct WidgetAgenda: View {
                                 Text("17")
                                     .font(.system(size: 37))
                                     .padding(.trailing, 50)
+                                    .foregroundColor(.black)
                             }
-                            .padding(.leading, 50)
+                            .padding(.leading, 33)
                             Spacer()
                             VStack {
                                 Text("SEGUNDA, 20 DE MAI.")
                                     .font(.system(size: 12))
                                     .bold()
                                     .foregroundStyle(.cinzaWidgetAgenda)
+                                    .padding(.trailing, -22)
                                 HStack {
                                     Text("|")
                                         .bold()
-                                        .padding(.trailing, -20)
+                                        .fontDesign(.rounded)
+                                        .padding(.trailing, -22)
                                     Text("Bridge")
                                         .font(.system(size: 15))
                                         .bold()
                                 }
                                 .foregroundStyle(.amareloQueimado)
-                                .padding(.trailing, 80)
+                                .padding(.trailing, 55)
                             }
                             .padding(.top, -26)
-                            .padding(.trailing, 55)
+                            .padding(.trailing, 65)
                         }
                         Text("Último dia de entregas.")
                             .foregroundStyle(.cinzaEvento)
-                            .padding(.trailing, 150)
+                            .font(.system(size: 16))
+                            .padding(.trailing, 160)
                             .padding(.top, 10)
                     }
                 }

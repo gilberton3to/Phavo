@@ -52,7 +52,7 @@ struct MyDataPicker: View {
                 }
             }
             .padding(.horizontal)
-            HStack(spacing: -6) {
+            HStack(spacing: -13) {
                 ForEach(days, id: \.self) {day in
                     Text(day)
                         .font(.system(size: 14))
@@ -76,37 +76,36 @@ struct MyDataPicker: View {
                 }
                 }
             }
-            VStack(spacing: 20) {
-                Text("Tasks")
-                    .font(.title2.bold())
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                if let taskMetadata = tasksModel.tasksMetaDatas.first(where: { task in
-                    return isSameDay(date1: task.taskDate, date2: currentDate)
-                }) {
-                    ForEach(taskMetadata.taskks) { task in
-                        VStack(alignment: .leading, spacing: 10) {
-                            Text(task.time.addingTimeInterval(CGFloat .random(in: 0...5000)), style: .time)
-                            Text(task.title)
-                                .font(.title2.bold())
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    }
-                    .padding(.vertical, 10)
-                    .padding(.horizontal)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .background(
-                            Color("yellowFazendo")
-                                .opacity(0.5)
-                                .cornerRadius(10))
-                } else {
-                    Text("Tarefa não encontrada")
-                }
-            }
-            .padding()
-            .padding(.top, 25)
+//            VStack(spacing: 20) {
+//                Text("Tasks")
+//                    .font(.title2.bold())
+//                    .frame(maxWidth: .infinity, alignment: .leading)
+//                if let taskMetadata = tasksModel.tasksMetaDatas.first(where: { task in
+//                    return isSameDay(date1: task.taskDate, date2: currentDate)
+//                }) {
+//                    ForEach(taskMetadata.taskks) { task in
+//                        VStack(alignment: .leading, spacing: 10) {
+//                            Text(task.time.addingTimeInterval(CGFloat .random(in: 0...5000)), style: .time)
+//                            Text(task.title)
+//                                .font(.title2.bold())
+//                        }
+//                        .frame(maxWidth: .infinity, alignment: .leading)
+//                    }
+//                    .padding(.vertical, 10)
+//                    .padding(.horizontal)
+//                    .frame(maxWidth: .infinity, alignment: .leading)
+//                    .background(
+//                            Color("yellowFazendo")
+//                                .opacity(0.5)
+//                                .cornerRadius(10))
+//                } else {
+//                    Text("Tarefa não encontrada")
+//                }
+//            }
+//            .padding()
+//            .padding(.top, 2)
         }
         .onChange(of: currentMonth) { oldValue, newValue in
-                // Ações a serem realizadas quando currentMonth mudar
                 print("currentMonth mudou de \(oldValue) para \(newValue)")
         }
     }
@@ -114,29 +113,21 @@ struct MyDataPicker: View {
     func cardView(value: DateValue) -> some View {
         VStack {
             if value.day != -1 {
-                if let taskMetaData = tasksModel.tasksMetaDatas.first(where: { task in
-                    return isSameDay(date1: task.taskDate, date2: currentDate)
-                }) {
+                ZStack {
+                    if isSameDay(date1: value.date, date2: currentDate) {
+                        Image("HexAmaCal")
+                            .frame(height: 1)
+                    }
                     Text("\(value.day)")
-                        .font(.title3.bold())
-                        .foregroundColor(isSameDay(date1: taskMetaData.taskDate,
-                                                   date2: currentDate) ? .white : .primary)
-                    Spacer()
-                    Circle()
-                        .fill(isSameDay(date1: taskMetaData.taskDate,
-                                        date2: currentDate) ? .white : Color("yellowFazendo"))
-                        .frame(width: 8, height: 8)
-                } else {
-                    Text("\(value.day)")
-                        .font(.title3.bold())
-                        .foregroundColor(isSameDay(date1: value.date, date2: currentDate) ? .yellowFazendo : .primary)
+                        .font(.title3)
+                        .foregroundColor(isSameDay(date1: value.date, date2: currentDate) ? .white : .primary)
                         .frame(maxWidth: .infinity)
                     Spacer()
                 }
             }
         }
-        .padding(.vertical, 9)
-        .frame(height: 60, alignment: .top)
+        .padding(.vertical, 0)
+        .frame(height: 53, alignment: .top)
     }
     func isSameDay(date1: Date, date2: Date) -> Bool {
         let calendar = Calendar.current

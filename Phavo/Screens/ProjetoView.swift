@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct ProjetoView: View {
+    @StateObject var tasksModel = TasksModel()
+    @State var currentDate: Date = Date()
     var body: some View {
         ScrollView {
             VStack {
@@ -38,9 +40,21 @@ struct ProjetoView: View {
                         .padding(.trailing, 220)
                         .padding(.bottom, 15)
                     VStack {
-                        AgendaWidget()
+                        ZStack {
+                            RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                                .foregroundColor(.white)
+                                .frame(width: 360, height: 435)
+                                .padding(.trailing, 0)
+                                .padding(.bottom, 0)
+                                .padding(.top, 40)
+                            MyDataPicker(currentDate: currentDate)
+                                .environmentObject(tasksModel)
+                                .padding(.horizontal, 27)
+                                .padding(.bottom, 0)
+                                .padding(.top, 65)
+                        }
                     }
-                    .padding(.top, 170)
+                    .padding(.top, -40)
                 }
             }
             .navigationBarTitle("Projeto1", displayMode: .inline)

@@ -26,11 +26,12 @@ struct WidgetLista: View {
                                     .font(.system(size: 15.23))
                             }
                             Divider().background(Color.gray)
-                                .frame(width: 100)
-                                .padding(.leading, 50)
+                                .frame(width: 105)
+                                .padding(.leading, 35)
                                 .padding(.top, 2)
                         }
                         .padding(.bottom, -2)
+                        .padding(.leading, -0.5)
                         VStack {
                             HStack {
                                 Circle()
@@ -38,15 +39,16 @@ struct WidgetLista: View {
                                     .frame(width: 22, height: 22)
                                     .opacity(0.5)
                                     .foregroundStyle(.cinzaEvento)
-                                Text("Decidir a fonte!")
+                                Text("Decidir a fontes")
                                     .font(.system(size: 15.23))
                             }
                             Divider().background(Color.gray)
-                                .frame(width: 100)
-                                .padding(.leading, 50)
+                                .frame(width: 105)
+                                .padding(.leading, 35)
                                 .padding(.top, 2)
                         }
                         .padding(.bottom, -2)
+                        .padding(.leading, 1)
                         VStack {
                             HStack {
                                 Circle()
@@ -54,28 +56,10 @@ struct WidgetLista: View {
                                     .frame(width: 22, height: 22)
                                     .opacity(0.5)
                                     .foregroundStyle(.cinzaEvento)
-                                Text("Marcar reunião")
+                                Text("Marcar reuniões")
                                     .font(.system(size: 15.23))
                         }
-                            .padding(.leading, -2)
-                            Divider().background(Color.gray)
-                                .frame(width: 100)
-                                .padding(.leading, 50)
-                                .padding(.top, 2)
-                        }
-                        if tipo == 4 {
-                            VStack {
-                                HStack {
-                                    Circle()
-                                        .stroke(lineWidth: 1.54)
-                                        .frame(width: 22, height: 22)
-                                        .opacity(0.5)
-                                        .foregroundStyle(.cinzaEvento)
-                                    Text("Atualizar github")
-                                        .font(.system(size: 15.23))
-                                }
-                                .padding(.leading, 5)
-                            }
+                            .padding(.leading, 5)
                         }
                     }
                     .padding(.trailing, 90)
